@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
+        <title>Mobile Menu</title>
+        <link rel="stylesheet" href="slicknav.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="main_menu">
+            <div class="logo_area">
+                <a href=""><img src="logo.png" alt=""></a>
+            </div>
+            <div class="inner_main_menu">
+                <ul id="menu">
+                    <li><a href="">Dashboard</a></li>
+                    <li><a href="">Student</a></li>
+                    <li><a href="">Teacher</a></li>
+                    <li><a href="">Attendance</a></li>
+                    <li><a href="">Program</a></li>
+                    <li><a href="">Course</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#menu').slicknav();
+        });
+    </script>
+    </body>
+</html>
