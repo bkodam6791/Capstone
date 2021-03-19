@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="../style/style.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="evo-calendar/css/evo-calendar.css"/>
 </head>
 
 <body>
@@ -63,6 +64,18 @@
 
                 </div>
             </div>
+            
+            <div id="calendar"></div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="evo-calendar/js/evo-calendar.js"></script>
+            <script>
+            // initialize your calendar, once the page's DOM is ready
+            $(document).ready(function() {
+            $('#calendar').evoCalendar({
+                settingName: settingValue
+            })
+            })
+            </script>
         </section>
         <footer class="bg-light">
 
